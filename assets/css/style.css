@@ -1,0 +1,46 @@
+/* header */
+#headerCSS {
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+
+/* search box */
+#searchBox {
+  padding: 1%;
+  border: 1px solid black;
+}
+
+/* recent history */
+#recentHistory {
+  padding: 1%;
+  border-top: 2px solid black;
+  height: fit-content;
+}
+
+/* current day weather */
+#currentDay {
+  border: 1px solid black;
+  height: 350px;
+}
+
+/* 5 day forecast */
+#forecast {
+  border: 1px solid black;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+/* footer */
+#footerCSS {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1%;
+  background-color: blue;
+  color: white;
+}
