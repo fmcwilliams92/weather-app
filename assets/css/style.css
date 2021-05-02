@@ -11,6 +11,10 @@
   border: 1px solid black;
 }
 
+#searchBtn {
+  margin-top: 5px;
+}
+
 /* recent history */
 #recentHistory {
   padding: 1%;
@@ -23,20 +27,29 @@
   border: 1px solid black;
   height: 350px;
   padding: 1%;
+  font-size: larger;
+  background-color: lightblue;
 }
 
 #currentDay > ul > li {
   list-style: none;
+  margin: 3%;
 }
 
 /* 5 day forecast */
 #forecast {
   border: 1px solid black;
-  height: 350px;
+  height: 200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-color: lightblue;
   padding: 1%;
+  align-items: flex-start;
+}
+
+.weeklyForecast > li {
+  list-style: none;
 }
 
 /* footer */

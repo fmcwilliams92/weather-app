@@ -29,12 +29,22 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + userInput + '&appid
   latitude = data.coord.lat;
   longitude = data.coord.lon;
 
+  city = document.querySelector('#city').innerHTML = 'City: ' + data
+
   kelvinToFarenheit = (Math.round(data.main.temp - 273.15) * 9 / 5 + 32);
   temp = document.querySelector('#temp').innerHTML = 'Temp: ' + kelvinToFarenheit;
 
   wind = document.querySelector('#wind').innerHTML = 'Wind: ' + data.wind.speed;
   humidity = document.querySelector('#humidity').innerHTML = 'Humidity: ' + data.main.humidity;
 
-  
+  fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' + latitude + '&lon=' + longitude + '&appid=' + apiKey)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data);
+
+  uvIndex = document.querySelector('#uvIndex').innerHTML = 'UV Index: ' + data.current.uvi;
+  });
   });
 }
