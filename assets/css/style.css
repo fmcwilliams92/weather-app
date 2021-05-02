@@ -8,7 +8,7 @@
 /* search box */
 #searchBox {
   padding: 1%;
-  border: 1px solid black;
+  /* min-width: 1050px; */
 }
 
 #searchBtn {
@@ -23,11 +23,12 @@
 
 /* current day weather */
 #currentDay {
-  border: 1px solid black;
+  border: 2px solid black;
   height: 350px;
   padding: 1%;
   font-size: larger;
   background-color: lightblue;
+  border-radius: 5%;
 }
 
 #currentDay > ul > li {
@@ -36,8 +37,12 @@
 }
 
 /* 5 day forecast */
+#forecastSeperator {
+  padding-top: 2%;
+}
+
 #forecast {
-  height: 200px;
+  height: 350px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

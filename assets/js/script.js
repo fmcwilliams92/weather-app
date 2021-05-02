@@ -8,6 +8,9 @@ var uvIndex;
 var latitude;
 var longitude;
 
+// array for cities searched
+var searchedCities = [];
+
 // search button event listener
 var searchButton = document.getElementById('searchBtn');
 searchButton.addEventListener('click', cityInput);
@@ -32,10 +35,10 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + userInput + '&appid
   city = document.querySelector('#city').innerHTML = 'City: ' + data
 
   kelvinToFarenheit = (Math.round(data.main.temp - 273.15) * 9 / 5 + 32);
-  temp = document.querySelector('#temp').innerHTML = 'Temp: ' + kelvinToFarenheit;
+  temp = document.querySelector('#temp').innerHTML = 'Temp: ' + kelvinToFarenheit + ' degrees';
 
   wind = document.querySelector('#wind').innerHTML = 'Wind: ' + data.wind.speed;
-  humidity = document.querySelector('#humidity').innerHTML = 'Humidity: ' + data.main.humidity;
+  humidity = document.querySelector('#humidity').innerHTML = 'Humidity: ' + data.main.humidity + '%';
 
   fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' + latitude + '&lon=' + longitude + '&appid=' + apiKey)
   .then(function(response) {
@@ -44,6 +47,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + userInput + '&appid
   .then(function(data) {
     console.log(data);
 
+  // city = document.querySelector('#city').innerHTML = 'City: ' + data..sys.id;
   uvIndex = document.querySelector('#uvIndex').innerHTML = 'UV Index: ' + data.current.uvi;
   });
   });
