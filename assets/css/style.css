@@ -25,6 +25,10 @@
   padding: 1%;
 }
 
+#currentDay > ul > li {
+  list-style: none;
+}
+
 /* 5 day forecast */
 #forecast {
   border: 1px solid black;

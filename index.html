@@ -18,8 +18,8 @@
   <div class="row">
     <div id="searchBox" class="col-3">
       <h2>Search a City:</h2>
-      <input type="text" name="Search" id="">
-      <button>Search</button>
+      <input type="text" name="Search" id="userInput">
+      <button id="searchBtn">Search</button>
       <br></br>
       <div id="recentHistory">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tenetur iure animi omnis tempora consectetur consequuntur aut magni provident vero iusto, nisi possimus officia voluptas non! Temporibus, nam atque. Amet.
@@ -27,7 +27,20 @@
     </div>
     <div class="col-9">
       <div id="currentDay">
-        Today's weather
+        <ul>
+          <li id="temp">
+            Temp:
+          </li>
+          <li id="wind">
+            Wind:
+          </li>
+          <li id="humidity">
+            Humidity:
+          </li>
+          <li id="uvIndex">
+            UV Index:
+          </li>
+        </ul>
       </div>
       <div id="forecast">
         <div>
