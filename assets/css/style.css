@@ -37,18 +37,17 @@
 
 /* 5 day forecast */
 #forecast {
-  border: 1px solid black;
   height: 200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: lightblue;
   padding: 1%;
   align-items: flex-start;
 }
 
 .weeklyForecast > li {
   list-style: none;
+  padding: 0;
 }
 
 /* footer */
