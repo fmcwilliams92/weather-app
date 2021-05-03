@@ -21,3 +21,6 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
 https://fmcwilliams92.github.io/weather-app/
+
+
+![image](https://user-images.githubusercontent.com/80353368/116840815-e038d180-ab9c-11eb-82f7-c11bcc749a9a.png)
