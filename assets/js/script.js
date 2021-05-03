@@ -32,7 +32,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=' + userInput + '&appid
   latitude = data.coord.lat;
   longitude = data.coord.lon;
 
-  city = document.querySelector('#city').innerHTML = 'City: ' + data
+  city = document.querySelector('#city').innerHTML = 'City: ' + data.name;
 
   kelvinToFarenheit = (Math.round(data.main.temp - 273.15) * 9 / 5 + 32);
   temp = document.querySelector('#temp').innerHTML = 'Temp: ' + kelvinToFarenheit + ' degrees';
